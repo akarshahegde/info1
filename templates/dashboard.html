@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Add any additional CSS or head content here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .user-info {
+            margin-bottom: 20px;
+        }
+
+        .audit-link {
+            color: #007BFF;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .audit-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+
+    <div class="user-info">
+        <p><strong>Username:</strong> {{ username }}</p>
+        <p><strong>Role:</strong> {{ role }}</p>
+    </div>
+
+    <!-- Add your dashboard content here -->
+
+    <a href="/logout">Logout</a>
+    <a href="/audit-trail" class="audit-link">View Audit Trail</a>
+</body>
+</html>
+
